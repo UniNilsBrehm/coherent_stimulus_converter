@@ -47,7 +47,7 @@ def looming(s_file):
     time_sec = s_file[3]
     fr = np.ceil(1 / np.diff(time_sec).mean())
     binary = np.zeros(int(fr * rec_duration))
-    binary[0:int(np.ceil(time_sec.max() * fr))] = disc_size
+    binary[0:time_sec.shape[0]] = disc_size
     return binary
 
 def flash(s_file):
