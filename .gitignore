@@ -1,0 +1,16 @@
+# ignore ALL .log files
+*.log
+*.idea
+*.txt
+
+# ignore ALL files in ANY directory
+
+backup
+temp
+.temp 
+.idea
+__pycache__
+.idea/
+__pycache__/
+stimulus_file
+stimulus_file/
